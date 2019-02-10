@@ -55,9 +55,11 @@ input, span
 	color: white;
 	background-color: black;
 	border-width: 0.3vw;
-	border-radius: 5vw ;
+	border-top-left-radius: 5vw ;
+	border-bottom-left-radius: 5vw ;
 	border-color: white;
 	width: 110vw;
+	height: 10vw;
 	font-size: 7vw;
 	
 }
