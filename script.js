@@ -6,8 +6,8 @@ let volume = document.getElementById("volume");
 btn.onclick = function() {
 	let consumption = ((end.value - start.value)*0.14).toFixed(2); //расход
 	let mileage = (end.value - start.value); //пробег
-	let left1 = volume.value - fuel.value; //остаток топлива (выезд)
-	let left2 = volume.value - consumption; //остаток топлива (возвращение)
+	let left1 = (volume.value - fuel.value).toFixed(2); //остаток топлива (выезд)
+	let left2 = (volume.value - consumption).toFixed(2); //остаток топлива (возвращение)
 	document.getElementById("result").innerHTML = 
 	"Пробег: " + "<span>" + mileage + "</span> км." + "</br>" +
 	"Расход: " + "<span>" + consumption + "</span> л." + "</br>" + "<hr>" +
